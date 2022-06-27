@@ -3,10 +3,12 @@
     "c2nim": {
       "inputs": {
         "flakeNimbleLib": [
+          "wren-master",
           "nimgen",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "wren-master",
           "nimgen",
           "nixpkgs"
         ],
@@ -54,9 +56,11 @@
       "inputs": {
         "c2nim": "c2nim",
         "flakeNimbleLib": [
+          "wren-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "wren-master",
           "nixpkgs"
         ],
         "regex": "regex",
@@ -64,11 +68,11 @@
       },
       "locked": {
         "dir": "v0_5_1",
-        "lastModified": 1656303130,
-        "narHash": "sha256-ejoBcn95jVTaqLxTmUd+EEGR1bnPffsDXT7FbhR9kHY=",
+        "lastModified": 1650758213,
+        "narHash": "sha256-milhjFAD/p73yW9ZDGHwpALNt9EQhh9sDGCXPYDBbyE=",
         "owner": "nim-nix-pkgs",
         "repo": "nimgen",
-        "rev": "08882bbb74a7c940d249365f10b576388011d588",
+        "rev": "e40df7d3f2b9468840ca8b148b456f6c1902bf97",
         "type": "github"
       },
       "original": {
@@ -94,10 +98,12 @@
     "regex": {
       "inputs": {
         "flakeNimbleLib": [
+          "wren-master",
           "nimgen",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "wren-master",
           "nimgen",
           "nixpkgs"
         ],
@@ -124,9 +130,8 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "nimgen": "nimgen",
         "nixpkgs": "nixpkgs",
-        "src-wren-master": "src-wren-master"
+        "wren-master": "wren-master"
       }
     },
     "src-c2nim-0_9_18": {
@@ -217,11 +222,13 @@
     "unicodedb": {
       "inputs": {
         "flakeNimbleLib": [
+          "wren-master",
           "nimgen",
           "regex",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "wren-master",
           "nimgen",
           "regex",
           "nixpkgs"
@@ -242,6 +249,34 @@
         "owner": "nim-nix-pkgs",
         "ref": "master",
         "repo": "unicodedb",
+        "type": "github"
+      }
+    },
+    "wren-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nimgen": "nimgen",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wren-master": "src-wren-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1652367538,
+        "narHash": "sha256-C3I1aQtSAq1QfbwEMuZ0dHwb68ArxFWZqdYpjL4byAY=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wren",
+        "rev": "30890dc409a0a4628b8308bd50ec792739ee0c56",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wren",
         "type": "github"
       }
     }
